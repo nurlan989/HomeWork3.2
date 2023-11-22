@@ -29,7 +29,6 @@ bool DealDamageToCharacter( Characters characterType, int damage )
 	static int vikingHP = CharacterAtributes::hp + CharacterAtributes::elixirOfLife;
 	static int wizardHP = CharacterAtributes::hp + CharacterAtributes::magicPowder;
 
-
 	switch (characterType)
 	{
 	case Characters::Knight:
