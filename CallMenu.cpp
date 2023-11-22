@@ -32,4 +32,3 @@ int character2{ 0 };
 		CLEAN_SCREEN;
 
 	}
-
