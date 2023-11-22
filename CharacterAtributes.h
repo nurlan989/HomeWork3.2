@@ -1,5 +1,13 @@
 #pragma once
 
+
+enum class Characters
+{
+	Knight = 1,
+	Viking = 2,
+	Wizard = 3
+};
+
 namespace CharacterAtributes
 {
 	static int hp{ 100 };
@@ -7,12 +15,17 @@ namespace CharacterAtributes
 	static int shield{ 400 };
 	static int elixirOfLife{ 500 };
 	static int magicPowder{ 250 };
-	static int healthPowder{ 60 };
+	static int healthPowder{ 40 };
 }
-bool DealDamageToKnight(int damage);
-bool DealDamageToViking(int damage);
-bool DealDamageToWizard(int damage);
-bool DealDamageToTraitor(int damage);
 
-short CharacterDamage(int min, int max);
+
+std::string ChoiceCharacter(Characters character);
+
+bool DealDamageToCharacter(Characters characterType, int damage);
+
+bool DescriptionOfTheBattle(int& characterHP, int damage, Characters characterType);
+
+int GetDamageCharacter(Characters characterType);
+
+short GetDamageRandom(int min, int max);
 
